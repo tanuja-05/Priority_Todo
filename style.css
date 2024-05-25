@@ -81,13 +81,7 @@ select {
     outline: none;
     margin-right: 5px;
 }
- /* .select-container i {
-    position: absolute;
-    margin-bottom: 4px;
-    margin-right: 65%;
-    font-size: 20px;
-    color: #000000;
-}  */
+
 button {
     border: none;
     outline: none;
@@ -154,4 +148,47 @@ ul li.low {
     margin: 7px;
     border-radius: 10px;
     border-left: 7px solid #9af120;
+}
+
+@media (max-width: 768px) {
+    .datetime {
+        font-size: 20px;
+        padding: 10px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    .todo-List {
+        font-size: 18px;
+        padding: 20px 15px;
+        
+    }
+    
+    input, select, button {
+        font-size: 16px;
+        margin: 5px 0;
+    }
+    button {
+        width: auto;
+        align-self: flex-start;
+    }
+}
+@media screen and (max-width: 480px) {
+   
+    
+    .datetime {
+        font-size: 16px;
+        padding: 5px;
+    }
+    .todo-List {
+        font-size: 16px;
+        padding: 10px;
+    }
+   
+    input, select, button {
+        font-size: 14px;
+    }
+    button{
+        padding: 10px 20px;
+    }
+    
 }
