@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"> 
+    
+</head>
+<body>
+    <div class="container">
+        <div id="datetime" class="datetime"></div>
+        <div class="todo-List">
+            <h2>To-Do List <img src="./Images/icon.png" ><span class="emoji">🪴</span></h2>
+            <div class="row">
+                <input type="text" id="input-box" placeholder="Add your task">
+               <div class="select-container">
+                <select id="priority-select">
+                    <option value="high">High</option>
+                    <option value="medium">Medium</option>
+                    <option value="low">Low</option> 
+                </select>
+               </div> 
+                <button onclick="addTask()">Add</button>
+            </div>
+            <ul id="list-container"></ul>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
