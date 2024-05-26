@@ -189,13 +189,18 @@ ul li.low {
     input, select, button {
         font-size: 14px;
     }
-    
+    input{
+        flex: none;
+        padding: 5px;
+    }
     select{
         padding: 10px;
+        margin-left: -70px;
     }
      button{
         padding: 10px 20px;
         align-self: flex-start;
+        margin-left: 10px;
     }
     
     
